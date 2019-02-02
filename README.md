@@ -1,5 +1,8 @@
 # Voice Assistant
 
+## Project status
+
+## Description
 The goal of voice assistant is to provide voice commands that can be used for minor operations during
 work on PC, IDE or some other software
 
@@ -19,3 +22,12 @@ Plugin must be aware of context. In terms of context each command will have a sp
 
 
 TensorFlow framework is chosen for proof of concept.
+
+## Technology stack
+
+## How to get started
+
+## How to use
+
+## License
+MIT
