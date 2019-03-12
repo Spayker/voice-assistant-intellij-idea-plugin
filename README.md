@@ -28,6 +28,7 @@ TensorFlow framework is chosen for proof of concept.
 ## How to get started
 
 ## How to use
+Since it's a plugin to Idea you have to install plugin locally
 
 ## License
 MIT
