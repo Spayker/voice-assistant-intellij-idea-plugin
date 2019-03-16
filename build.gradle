@@ -8,12 +8,13 @@ plugins {
     id 'org.jetbrains.intellij' version '0.4.5'
 }
 
+group 'com.spayker.voicea'
+version '1.0-SNAPSHOT'
+
 apply plugin: 'idea'
 apply plugin: 'org.jetbrains.intellij'
 apply plugin: 'java'
 
-group 'com.spayker.voicea'
-version '1.0-SNAPSHOT'
 
 intellij {
     version 'IC-2016.3' //IntelliJ IDEA 2016.3 dependency; for a full list of IntelliJ IDEA releases please see https://www.jetbrains.com/intellij-repository/releases
