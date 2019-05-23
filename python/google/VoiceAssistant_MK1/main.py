@@ -51,16 +51,66 @@ def recognize_speech_from_mic(recognizer, microphone):
     return response
 
 
+# if __name__ == "__main__":
+#     # create recognizer and mic instances
+#     recognizer = sr.Recognizer()
+#     microphone = sr.Microphone()
+#
+#     while True:
+#         print('Speak!')
+#         guess = recognize_speech_from_mic(recognizer, microphone)
+#
+#         # show the user the transcription
+#         print("You said: {}".format(guess["transcription"]))
+#
+#         time.sleep(1)
+
 if __name__ == "__main__":
-    # create recognizer and mic instances
-    recognizer = sr.Recognizer()
-    microphone = sr.Microphone()
+        while True:
+            r = sr.Recognizer()
+            with sr.Microphone() as source:
+                print("say something")
+                audio = r.listen(source)
+                try:
+                    print("Text:"+r.recognize_google(audio, language = 'en-us', show_all=False))
+                except sr.UnknownValueError:
+                    print("Google Speech Recognition could not understand audio")
+                except sr.RequestError as e:
+                    print("Could not request results from Google Speech Recognition service")
 
-    while True:
-        print('Speak!')
-        guess = recognize_speech_from_mic(recognizer, microphone)
+# an approximate algorithm
+# 1) specify context (like: set context DevOps)
+# 2) set command to do something (like: init ReactJs project)
 
-        # show the user the transcription
-        print("You said: {}".format(guess["transcription"]))
+## toDo
+# 1) prepare context list
+#   java
+#   reactjs
+#   python
+#   bash
+#
+#
+# 2) prepare command list for current folder where you are
+#   java
+#       create __say_name__ class
+#       create __say_name__ interface
+#
+#   reactjs
+#       init __say_name__ project
+#
+#   python
+#       ...
+#
+#   bash
+#       mkdir __say_name__
+#       remove __say_name__ folder
+#
+#
+#
+#
 
-        time.sleep(1)
+
+
+
+
+
