@@ -1,3 +1,5 @@
+[![GitHub license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/Spayker/voice-helper/blob/master/LICENSE)
+
 # Voice Assistant
 The goal of voice assistant is to provide voice commands that can be used for minor operations during
 work on PC, IDE or some other software
